@@ -25,8 +25,6 @@ def format_age(age, length_year=4):
         if len(list_delim) == 1:
             list_delim = list_delim + list_delim
 
-        print(list_delim)
-
         if re.match(r"^[0-9]{2}\D", age):
             format_strp = r'%d{}%m{}%Y'.format(*list_delim)
         elif re.match(r"^[0-9]{4}\D", age):
