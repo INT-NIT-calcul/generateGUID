@@ -6,15 +6,15 @@ Tool to generate GUID using sha256
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install GUID-core.
 
 ```bash
-pip install guid_core
+pip install generateGUID
 ```
 
 ## Usage
 
 ```python
-import guid_core
+import generateGUID
 
-guid_core.generate_GUID(string) # returns guid
+generateGUID.generate_GUID(string) # returns guid
 
 
 
@@ -23,7 +23,7 @@ lastname=string
 dateOfBirth=string 
 gender=string
 
-guid_core.generate_GUID2(firstname,lastname,dateOfBirth,gender) # returns guid
+generateGUID.generate_GUID2(firstname,lastname,dateOfBirth,gender) # returns guid
 
 ```
 
