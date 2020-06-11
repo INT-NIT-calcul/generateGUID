@@ -6,8 +6,7 @@ from generateGUID import generate_GUID
 if len(sys.argv) > 1:
 
     if len(sys.argv) == 5:
-        key = sys.argv[1]+sys.argv[2]+sys.argv[3]+sys.argv[4]
-        guid=generate_GUID(key)
+        guid=generate_GUID2(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
         print(guid)
     elif len(sys.argv) == 2:
         key = sys.argv[1]
