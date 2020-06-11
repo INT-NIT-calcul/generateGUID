@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import sys
-from generateGUID import generate_GUID
+from generateGUID import generate_GUID, generate_GUID2
 
 
 if len(sys.argv) > 1:
