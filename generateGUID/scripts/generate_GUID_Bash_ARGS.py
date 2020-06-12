@@ -16,5 +16,7 @@ if len(sys.argv) > 1:
         sys.exit(0)
     else:
         print("mauvais nombre d'arguments: {}".format(len(sys.argv)))
-
-sys.exit(-1)
+        sys.exit(1)
+else:
+    print("Pas d'arguments")
+    sys.exit(1)
