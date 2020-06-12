@@ -11,7 +11,7 @@ def generate_GUID(keyInput, truncate = 12):
 
     if truncate < len(GUID):
         GUID = GUID[:truncate]
-    return GUID
+    return GUID.upper()
 
 # flake8: noqa: C901
 def generate_GUID2(nom, prenom, age, sexe):
