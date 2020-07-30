@@ -5,10 +5,13 @@ from generateGUID.strip_accents import text_to_id, format_age
 import hashlib
 import re
 
-def generate_GUID(keyInput):
+def generate_GUID(keyInput, truncate = 12):
     keygood = text_to_id(keyInput)
     GUID = hashlib.sha256(keygood.encode('utf-8')).hexdigest()
-    return GUID
+
+    if truncate < len(GUID):
+        GUID = GUID[:truncate]
+    return GUID.upper()
 
 # flake8: noqa: C901
 def generate_GUID2(nom, prenom, age, sexe):
